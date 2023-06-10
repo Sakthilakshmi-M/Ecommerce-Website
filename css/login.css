@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+:root {
+  --darkBlue : #2B3467;
+  --Blue : #2B3467;
+  --lightBlue : #BAD7E9;
+  --ivory: #FCFFE7;
+  --pink: #EB455F;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Sans', sans-serif;
+}
+html,body{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: orange;
+  width: 60vw;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+}
+
+.grid-1 {
+  background-color: #ddd;
+
+}
+.grid-2 {
+  background-color: var(--darkBlue);
+}
+
+.heading {
+  text-align: center;
+  margin: 2em;
+  color: var(--Blue);
+}
+
+.heading h1 {
+  text-align: center;
+  display: inline;
+  border-bottom : 5px solid var(--darkBlue)
+}
+
+.form {
+  margin-top: 2em;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+}
+
+.form input {
+  justify-self: center;
+  width: 200px;
+  padding: 5px;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.input-group {
+  border: 2px solid var(--darkBlue);
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 2px;
+  background-color: #fff;
+}
+
+.input-group>i {
+  margin: 0 5px;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: var(--darkBlue);
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: var(--darkBlue)
+}
+
+::placeholder {
+  color:  var(--darkBlue);
+  letter-spacing: 1px;
+}
+
+input[type=submit]{
+  background-color: var(--darkBlue);
+  width: 100px;
+  padding: 10px;
+  color: #fff;
+  margin-top: 20px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  box-shadow: 0 5px 10px rgba(43, 52, 103,0.6);
+}
